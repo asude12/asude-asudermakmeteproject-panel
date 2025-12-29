@@ -38,9 +38,9 @@ const getStyles = () => {
 export const SimplePanel: React.FC<Props> = ({ options, data, width, height }) => {
   const styles = useStyles2(getStyles);
   
-  // Eğer ayarlardan renk gelmezse varsayılan 'red' olsun
+
   const circleColor = options.circleColor || 'red';
-  // Eğer ayarlardan boyut gelmezse varsayılan 80 olsun
+ 
   const circleRadius = options.circleSize || 80;
 
   const onCircleClick = () => {
@@ -66,7 +66,6 @@ export const SimplePanel: React.FC<Props> = ({ options, data, width, height }) =
         viewBox={`-${width / 2} -${height / 2} ${width} ${height}`}
       >
         <g onClick={onCircleClick} style={{ cursor: 'pointer' }}>
-          {/* Dairenin rengi ve boyutu burada belirleniyor */}
           <circle style={{ fill: circleColor }} r={circleRadius} />
         </g>
       </svg>
