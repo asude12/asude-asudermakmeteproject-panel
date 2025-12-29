@@ -1,0 +1,7 @@
+apiVersion: 1
+
+providers:
+  - name: 'asude_ırmak_mete-project'
+    type: file
+    options:
+      path: /etc/grafana/provisioning/dashboards
